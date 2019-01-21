@@ -1,0 +1,15 @@
+.posts{
+  .post-title{
+    color: $red;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .post-author{
+    color: $black;
+  }
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+}

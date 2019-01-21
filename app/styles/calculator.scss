@@ -1,0 +1,42 @@
+.calculator{
+  display: flex;
+  .total{
+    width: 180px;
+    height: 60px;
+    background:#5b5b5b;
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    overflow: hidden;
+  }
+  .action-buttons{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    button{
+      width: 60px;
+      height: 60px;
+      border: 0;
+      background: #f59902;
+    }
+  }
+  .number-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    button{
+      width: 60px;
+      height: 60px;
+      border: 0;
+      background: #ececec;
+      cursor: pointer;
+      &:last-child{
+        width: 120px;
+      }
+    }
+  }
+}

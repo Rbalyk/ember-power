@@ -1,0 +1,14 @@
+
+<p>{{this.model.body}}</p>
+<div class="post-author-information">
+    <div><b>Author Information:</b></div>
+    <ul>
+        <li><span><b>Name:</b></span> {{this.model.userId.name}}</li>
+        <li><span><b>Email:</b></span> {{this.model.userId.email}}</li>
+        <li><span><b>Phone:</b></span> {{this.model.userId.phone}}</li>
+        <li><span><b>Website:</b></span> {{this.model.userId.website}}</li>
+    </ul>
+</div>
+{{#link-to 'posts' tagName='div'}}
+    <a class="btn btn-primary" href="posts">Come Back to Posts</a>
+{{/link-to}}

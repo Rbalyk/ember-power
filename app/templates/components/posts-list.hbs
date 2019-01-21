@@ -1,0 +1,19 @@
+{{yield}}
+<h2>{{this.title}}</h2>
+<ul>
+    {{#each  this.posts as |post| }}
+        <li>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="post-author"><b>Author:</b> <span class="post-name">{{post.userId.name}}</span></p>
+                    <h6 class="post-title">{{post.title}}</h6>
+                    {{#link-to "posts.show" post class=post.id}}
+                        <span class="btn btn-info">Read More</span>
+                    {{/link-to}}
+                </div>
+            </div>
+            <hr>
+        </li>
+
+    {{/each}}
+</ul>

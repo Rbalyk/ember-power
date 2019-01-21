@@ -1,0 +1,24 @@
+{{yield}}
+<h2>{{this.title}}</h2>
+<p>This is simple calculator was created with my basic knowledge in Ember.js </p>
+<div class="calculator">
+        <div class="number-list">
+            <div class="total">
+                <span id="secondNumber"></span>
+                <span id="action"></span>
+                <span id="firstNumber"></span>
+                <span id="total"></span>
+            </div>
+            {{#each this.numbers as |number|}}
+                <button {{action 'firstNumber' number}}>{{number}}</button>
+            {{/each}}
+        </div>
+        <div class="action-buttons">
+            <button {{action (pipe (action 'expression') (action 'plus'))}}>+</button>
+            <button {{action (pipe (action 'expression') (action 'minus'))}}>-</button>
+            <button {{action (pipe (action 'expression') (action 'multiplication'))}}>*</button>
+            <button {{action (pipe (action 'expression') (action 'division'))}}>/</button>
+            <button  {{action 'total' }}>=</button>
+        </div>
+
+</div>

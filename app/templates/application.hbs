@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+<nav class="navbar navbar-expand-lg">
+                {{#link-to 'application' tagName='div'}}
+                    <div class="logo">
+                        <a class="navbar-brand" href="application">ember.js</a>
+                    </div>
+
+                {{/link-to}}
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        {{#link-to 'about' tagName='li'}}
+                            <a class="nav-item nav-link" href="about">About</a>
+                        {{/link-to}}
+                        {{#link-to 'skills' tagName='li'}}
+                            <a class="nav-item nav-link" href="skills">Skills</a>
+                        {{/link-to}}
+                        {{#link-to 'calculator' tagName='li'}}
+                            <a class="nav-item nav-link" href="calculator">Calculator</a>
+                        {{/link-to}}
+                        {{#link-to 'posts' tagName='li'}}
+                            <a class="nav-item nav-link" href="posts">API Posts</a>
+                        {{/link-to}}
+                        {{#link-to 'currencies' tagName='li'}}
+                            <a class="nav-item nav-link" href="currencies">Privatbank</a>
+                        {{/link-to}}
+                    </ul>
+                </div>
+
+</nav>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {{liquid-outlet}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+{
+  "name": "app-cv",
+  "dependencies": {
+    "ember-cli-shims": "~0.1.1"
+  }
+}
