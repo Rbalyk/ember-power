@@ -6,5 +6,25 @@
       font-size: 16px;
     }
   }
+  iframe{
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+  }
+}
+body{
+  padding-bottom: 190px;
 }
 
+.btn-black{
+  color: $white;
+  background: $black;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: 700;
+  &:hover{
+    background: $red;
+    color: $white;
+    text-decoration: none;
+  }
+}

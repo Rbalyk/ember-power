@@ -1,0 +1,43 @@
+.footer {
+  background: #303030;
+  color: #D3D3D3;
+  height: 100px;
+  margin-top: 95px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 0 15px;
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .footer-copyright {
+      color: #656565;
+      font-size: 14px;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 15px;
+      a{
+        color: $white;
+        font-weight: 700;
+      }
+    }
+    .link {
+      background: $red;
+      color: #FEFEFE;
+      padding: 5px 10px 6px; font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

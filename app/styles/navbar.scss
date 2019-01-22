@@ -11,17 +11,6 @@ nav{
   .logo{
     width: 100%;
     text-align: center;
-    .navbar-brand{
-      color: $white;
-      background: $black;
-      display: inline-block;
-      padding: 5px 10px;
-      font-weight: 700;
-      span{
-        font-weight: 400;
-        display: block;
-      }
-    }
   }
 
   .navbar-collapse{
