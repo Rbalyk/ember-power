@@ -1,0 +1,13 @@
+{{outlet}}
+<div class="photos">
+    <h2>Instagram</h2>
+    <div class="row">
+
+        {{#each model as |photo|}}
+            <div class="col-md-3">
+                <img src="{{photo.images.low_resolution.url}}" alt="">
+            </div>
+        {{/each}}
+    </div>
+</div>
+
