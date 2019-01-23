@@ -1,9 +1,11 @@
 import DS from 'ember-data';
 
-export default DS.RESTSerializer.extend({
-    primaryKey: 'ccy',
+export default DS.RESTSerializer.extend(DS.EmbeddedRecordsMixin,{
+    primaryKey:'main',
     normalizeResponse(store, primaryModelClass, payload, id, requestType){
-        payload = { currencies:payload };
+
+        payload = { weathers: payload };
+        console.log(payload);
         return this._super(store, primaryModelClass, payload, id, requestType)
-    }
+    },
 });

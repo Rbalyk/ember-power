@@ -1,13 +1,17 @@
-{{outlet}}
 <div class="photos">
-    <h2>Instagram</h2>
+    <h2>Instagram API</h2>
+    <p>Simple way to get photos from Instagram API <a href="https://api.instagram.com/v1/users/self/media/recent?access_token=1554840227.1677ed0.0eeb346a248d45c3a4b80c30ca2b2f5e" target="_blank">https://api.instagram.com</a></p>
     <div class="row">
-
-        {{#each model as |photo|}}
-            <div class="col-md-3">
-                <img src="{{photo.images.low_resolution.url}}" alt="">
-            </div>
-        {{/each}}
+        <div class="col-md-12">
+            <ul class="list-photo">
+                {{#each model as |photo|}}
+                    <li>
+                        <img src="{{photo.images.standard_resolution.url}}" alt="Roman Balyk Instagram">
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
     </div>
 </div>
+{{outlet}}
 

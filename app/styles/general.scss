@@ -28,9 +28,36 @@ body{
     text-decoration: none;
   }
 }
+.input-group{
+  margin-bottom: 30px;
+}
 .photos{
-  img{
-    width: 100%;
-    margin-bottom: 15px;
+  ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -10px;
+    li{
+      width: 282px;
+      padding: 0 10px;
+      margin-bottom: 10px;
+      &:last-child{
+        display: none;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+}
+.weathers{
+  .main{
+    p{
+      margin: 0;
+    }
   }
 }

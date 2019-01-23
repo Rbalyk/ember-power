@@ -1,0 +1,29 @@
+<div class="weathers">
+    <h2>Weather API</h2>
+    <p>Simple way to work with weather API <a href="https://openweathermap.org/api" target="_blank">openweathermap.org/api</a>
+    </p>
+    <div class="row">
+
+        {{#each weathers as |weatherCityOption|}}
+            <div class="col-md-3">
+                <div class="main">
+                    <p><b>Country:</b> {{weatherCityOption.sys.country}}</p>
+                    <p><b>City:</b> {{weatherCityOption.name}} </p>
+                    <p><b>Temperature:</b> {{weatherCityOption.main.temp}}&#x2103;</p>
+                </div>
+            </div>
+        {{/each}}
+        {{#each weatherParameters as |weatherMain|}}
+            <div class="col-md-4">
+                <div class="main">
+                    <p><span><img src='http://openweathermap.org/img/w/{{weatherMain.icon}}.png' alt=""></span><span>{{weatherMain.main}}</span></p>
+                    <p>{{weatherMain.description}}</p>
+                </div>
+
+            </div>
+        {{/each}}
+
+    </div>
+</div>
+{{outlet}}
+

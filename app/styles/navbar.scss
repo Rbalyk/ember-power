@@ -25,6 +25,8 @@ nav{
     text-align: center;
     li{
       display: inline-block;
+      position: relative;
+      padding: 0 15px;
     }
     .active{
       a{
@@ -32,7 +34,6 @@ nav{
       }
     }
     a{
-      padding: 0 15px;
       font-weight: 700;
       text-transform: uppercase;
       transition: $transition-base;

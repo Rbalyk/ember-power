@@ -10,7 +10,11 @@ module.exports = function(defaults) {
       'importBootstrapCSS': true
     }
   });
-
+    // Client ID 3cba2c60464a47878971a69f909fa84c
+    //
+    // Client Secret c90994c21c2a4ae896475a7d8fe55212
+    //
+    // Client Status Sandbox Mode
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

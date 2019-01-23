@@ -1,0 +1,19 @@
+.about{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    padding: 0;
+    li{
+      list-style: none;
+      width: 180px;
+      padding: 0 15px;
+      margin-bottom: 15px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

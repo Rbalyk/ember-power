@@ -6,27 +6,23 @@
                     <div class="logo">
                         <a class="btn-black" href="application">Ember.js by Balyk</a>
                     </div>
-
                 {{/link-to}}
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
                         {{#link-to 'about' tagName='li'}}
                             <a class="nav-item nav-link" href="about">About</a>
                         {{/link-to}}
-                        {{#link-to 'skills' tagName='li'}}
-                            <a class="nav-item nav-link" href="skills">Skills</a>
-                        {{/link-to}}
-                        {{#link-to 'calculator' tagName='li'}}
-                            <a class="nav-item nav-link" href="calculator">Calculator</a>
-                        {{/link-to}}
                         {{#link-to 'posts' tagName='li'}}
-                            <a class="nav-item nav-link" href="posts">API Posts</a>
+                            <a class="nav-item nav-link" href="posts">Blog-Content Api</a>
                         {{/link-to}}
                         {{#link-to 'currencies' tagName='li'}}
-                            <a class="nav-item nav-link" href="currencies">Privatbank</a>
+                            <a class="nav-item nav-link" href="currencies">Privatbank Api</a>
                         {{/link-to}}
                         {{#link-to 'photos' tagName='li'}}
-                            <a class="nav-item nav-link" href="photos">Instagram</a>
+                            <a class="nav-item nav-link" href="photos">Instagram Api</a>
+                        {{/link-to}}
+                        {{#link-to 'weather' tagName='li'}}
+                            <a class="nav-item nav-link" href="weather">Weather Api</a>
                         {{/link-to}}
                     </ul>
                 </div>
@@ -44,7 +40,9 @@
 </div>
 <footer class="footer">
     <div class="wrapper">
-        <a class="link" href="https://rbalyk-cv.com/">Ember.js by Balyk</a>
+        {{#link-to 'application'}}
+            <a class="link" href="application">Ember.js by Balyk</a>
+        {{/link-to}}
         <p class="footer-copyright">© 2019 / with love by <a href="https://rbalyk-cv.com/" target="_blank">Roman
             Balyk</a></p>
     </div>

@@ -10,12 +10,12 @@ Router.map(function () {
   this.route('say-hi', {path: '/'});
   this.route('skills');
   this.route('calculator');
-  this.route('about');
   this.route('posts', function () {
       this.route('show', {path: '/:post_id'});
   });
   this.route('currencies');
-  this.route('post-body');
+  this.route('about');
   this.route('photos');
+  this.route('weather');
 });
 export default Router;
