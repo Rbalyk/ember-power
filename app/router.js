@@ -17,5 +17,7 @@ Router.map(function () {
   this.route('about');
   this.route('photos');
   this.route('weather');
+  this.route('shop');
+  this.route('page-not-found', {path:'/*wildcard'});
 });
 export default Router;

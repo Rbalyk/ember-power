@@ -1,18 +1,3 @@
-<h2>PrivatBank exchange rates</h2>
-<p>Simple work with Ukrainian Bank API <a href="https://api.privatbank.ua/#p24/exchange" target="_blank">https://api.privatbank.ua</a></p>
-<div class="row">
 
-
-        {{#each model as |currency|}}
-        <div class="col-md-6">
-            <p><b>{{currency.ccy}}</b> to <b>{{currency.base_ccy}}</b></p>
-            <p><span><b>Buy:</b> {{currency.buy}}</span> <span><b>Sale:</b> {{currency.sale}}</span></p>
-            <div class="input-group mb-12">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"></span>
-                </div>
-            </div>
-        </div>
-        {{/each}}
-</div>
+{{currency-list title="PrivatBank exchange rates" currencyArray=this.model}}
 {{outlet}}
