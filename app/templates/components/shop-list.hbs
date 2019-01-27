@@ -1,8 +1,25 @@
-{{input value=newFruit }}
-<button class="btn-black" {{action 'addFruit' newFruit}}>push</button>
-<ol>
-    {{#each arrayOfFruit as |fruit|}}
-        <li>{{fruit}}</li>
-    {{/each}}
-</ol>
+{{#liquid-if isExpanded}}
+    <div class='body'>
+        <h4>{{this.title}}</h4>
+        <label class="createItem" for="createItem">
+            {{input id="createItem" value=newFruit }}
+            <span>{{this.label}}</span>
+        </label>
+
+        <ol>
+            {{#each arrayOfFruit as |fruit|}}
+                <li onclick={{action "listItem"}} class="listItem {{if this.isWide "wide"}}">{{fruit}}</li>
+            {{/each}}
+        </ol>
+    </div>
+    <button class="btn-black" {{action 'close'}}>Close</button>
+    <button class="btn-black" {{action 'clear'}}>Clear List</button>
+    <button class="btn-black" {{action 'addFruit' newFruit}}>push</button>
+{{else}}
+    <div class="row justify-content-center">
+        <h4 class="btn-black" {{action 'expand'}}>{{this.openList}}</h4>
+    </div>
+
+{{/liquid-if}}
+
 {{yield}}

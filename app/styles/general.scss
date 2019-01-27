@@ -19,7 +19,7 @@ ul{
   padding: 0;
 }
 ol{
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .page-not-found{
   text-align: center;
@@ -43,14 +43,27 @@ ol{
   margin-bottom: 30px;
 }
 .shop-list{
-  input{
-    width: 200px;
-    margin-bottom: 10px;
-    height: 34px;
-    padding: 0 5px;
+  .createItem{
+    position: relative;
+    width: 100%;
+    input{
+      width: 100%;
+      margin-bottom: 20px;
+      height: 34px;
+      padding: 0 5px;
+    }
+    span{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      font-size: 12px;
+    }
   }
+
   h4{
     font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
   }
 }
 .photos{
