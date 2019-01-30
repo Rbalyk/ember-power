@@ -29,7 +29,7 @@ module.exports = function(app) {
       if(req.headers.authorization !== "Bearer secretcode"){
         return res.status(401).send("Unauthorized");
       }
-      return res.status(200).send({
+      return res.status(405).send({
           students: [
               {id:1, name:"Erik", age:23},
               {id:2, name:"Bob", age:52}
