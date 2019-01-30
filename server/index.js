@@ -13,7 +13,8 @@
 const bodyParser = require("body-parser");
 
 module.exports = function(app) {
-    var urlencode = require('urlencode');
+    var urlencoded = require('urlencode');
+    app.use(bodyParser,urlencoded({ extended: true}));
   app.post("/token", function (req,res) {
       if(req.body.username === "erik" && res.body.password === "password") {
         res.send({access_token: "secretcode"});
@@ -22,7 +23,7 @@ module.exports = function(app) {
       }
   });
 
-  app.use(bodyParser,urlencode({ extended: true}));
+
 
   app.get('/api/students', function (req,res) {
       if(req.headers.authorization !== "Bearer secretcode"){
