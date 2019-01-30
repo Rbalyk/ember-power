@@ -1,0 +1,11 @@
+
+
+{{#office-sulplies  as |office|}}
+    {{#office.stepler pressed=(action "pressed") as |propsStepler|}}
+        {{propsStepler.steplerNumber}}
+    {{/office.stepler}}
+    {{#office.pen pressedPen=(action "pressed") as |propsPen|}}
+        {{propsPen.penNumber}}
+    {{/office.pen}}
+{{/office-sulplies}}
+{{outlet}}
