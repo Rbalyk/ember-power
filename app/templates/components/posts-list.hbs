@@ -1,20 +1,21 @@
 {{yield}}
-<h2>{{this.title}}</h2>
-<p>Simple work with Blog-Content API <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener">jsonplaceholder.typicode.com/</a></p>
-<ul>
+<h2 class="title">{{this.title}}</h2>
+<p class="simple-text">Simple work with Blog-Content API <a href="https://jsonplaceholder.typicode.com/" class="link" target="_blank" rel="noopener">jsonplaceholder.typicode.com/</a>
+</p>
+<ul class="list-posts">
     {{#each  this.posts as |post| }}
+
         <li>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="post-author"><b>Author:</b> <span class="post-name">{{post.userId.name}}</span></p>
-                    <h6 class="post-title">{{post.title}}</h6>
-                    {{#link-to "posts.show" post class=post.id}}
-                        <span class="btn-black">Read More</span>
-                    {{/link-to}}
+            {{#link-to "posts.show" post class=post.id}}
+                <div class="wrapper-info">
+                    <p class="post-author"><span class="label">Author:</span> <b><span class="post-name">{{post.userId.name}}</span></b></p>
+                    <span class="post-title">{{post.title}}</span>
+
+                    <span class="btn-orange">Read More</span>
                 </div>
-            </div>
-            <hr>
+            {{/link-to}}
         </li>
+
 
     {{/each}}
 </ul>

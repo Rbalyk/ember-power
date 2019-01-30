@@ -1,17 +1,10 @@
-<h2>{{this.title}}</h2>
-<p>Simple work with Ukrainian Bank API <a href="https://api.privatbank.ua/#p24/exchange" target="_blank">https://api.privatbank.ua</a></p>
+<h2 class="title">{{this.title}}</h2>
+<p class="simple-text">Simple work with Ukrainian Bank API <a href="https://api.privatbank.ua/#p24/exchange" class="link" target="_blank">https://api.privatbank.ua</a></p>
 <div class="row">
-
-
     {{#each currencyArray as |currency|}}
         <div class="col-md-6">
             <p><b>{{currency.ccy}}</b> to <b>{{currency.base_ccy}}</b></p>
-            <p><span><b>Buy:</b> {{currency.buy}}</span> <span><b>Sale:</b> {{currency.sale}}</span></p>
-            <div class="input-group mb-12">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1"></span>
-                </div>
-            </div>
+            <p><span class="label">Buy:</span><span><b>{{currency.buy}}</b></span> <span class="label">Sale:</span><span><b>{{currency.sale}}</b></span></p>
         </div>
     {{/each}}
 </div>

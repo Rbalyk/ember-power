@@ -1,7 +1,18 @@
-{{outlet}}
-
-
-{{input value=loginName placeholder="Login"}} <br>
-{{input value=password placeholder="Password" type="password"}}
-
-<button {{action "authenticate"}}>Login</button>
+<section class="login-form-section">
+    <div class="container">
+        <div class="login-form">
+            <h1 class="super-title">Log In</h1>
+            <form>
+                <div>
+                    {{input value=loginName placeholder="Login"}}
+                    <p>const MATH = { PI : 3.14159 } console.log(MATH.PI)</p>
+                </div>
+                <div>
+                    {{input value=password placeholder="Password" type="password"}}
+                    <p>let sum = (x,y) => x + y <br>console.log(sum(5,2))</p>
+                </div>
+                <button class="btn-orange" {{action "authenticate"}}>Login</button>
+            </form>
+        </div>
+    </div>
+</section>

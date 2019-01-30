@@ -1,23 +1,33 @@
 <div class="weathers">
-    <h2>Weather API</h2>
-    <p>Simple way to work with weather API <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org/api</a>
+    <h2 class="title">Weather API</h2>
+    <p class="simple-text">Simple way to work with weather API <a href="https://openweathermap.org/api" class="link" target="_blank" rel="noopener">openweathermap.org/api</a>
     </p>
     <div class="row">
-
         {{#each weathers as |weatherCityOption|}}
             <div class="col-md-3">
                 <div class="main">
-                    <p><b>Country:</b> {{weatherCityOption.sys.country}}</p>
-                    <p><b>City:</b> {{weatherCityOption.name}} </p>
-                    <p><b>Temperature:</b> {{weatherCityOption.main.temp}}&#x2103;</p>
+                    <p>
+                        <span class="label">Country: </span>
+                        <span><b>{{weatherCityOption.sys.country}}</b></span>
+                    </p>
+                    <p>
+                        <span class="label">City: </span>
+                        <span><b>{{weatherCityOption.name}}</b></span>
+                    </p>
+                    <p>
+                        <span class="label">Temperature:</span>
+                        <span><b>{{weatherCityOption.main.temp}}&#x2103;</b></span>
+                    </p>
                 </div>
             </div>
         {{/each}}
         {{#each weatherParameters as |weatherMain|}}
             <div class="col-md-4">
                 <div class="main">
-                    <p><span><img src="http://openweathermap.org/img/w/{{weatherMain.icon}}.png" alt=""></span><span>{{weatherMain.main}}</span></p>
-                    <p>{{weatherMain.description}}</p>
+                    <p>
+                        <span><b><img src="http://openweathermap.org/img/w/{{weatherMain.icon}}.png" alt=""></b></span>
+                        <span><b>{{weatherMain.main}}</b></span></p>
+                    <p><b>{{weatherMain.description}}</b></p>
                 </div>
 
             </div>

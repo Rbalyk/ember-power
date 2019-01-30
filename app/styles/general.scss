@@ -1,73 +1,179 @@
-.say-hi{
-  h1{
+body {
+  background: #100e17;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  ul,ol{
+    list-style: none;
+    padding-left: 0;
+  }
+  button{
+    cursor: pointer;
+    &:hover,&:focus,&:visited,&:active{
+      outline: none;
+    }
+  }
+}
+
+.page-not-found {
+  text-align: center;
+}
+
+.btn-orange {
+  background-image: -webkit-gradient(linear,right bottom,left top,from(#ff8a00),to(#da1b60));
+  background-image: linear-gradient(to top left,#ff8a00,#da1b60);
+  color: white;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  border: 0;
+  border-radius: 20px;
+  white-space: nowrap;
+  padding: 15px 25px;
+  line-height: 1.4;
+  position: relative;
+  text-align: center;
+  transition: 70ms;
+  background-color: #100e17;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.btn-red{
+  background: $red;
+  color: white;
+  padding: 5px 10px 6px;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  &:hover{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.liquid-container {
+  transform: none;
+  position: inherit;
+}
+.trick {
+  display: block;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  border: 0;
+  height: 5px;
+  margin: 60px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60));
+  background-image: linear-gradient(to right, #ff8a00, #da1b60);
+  border-radius: 5px;
+}
+.label{
+  color: $grey;
+  font-family: 'Lato', sans-serif;
+  margin-right: 5px;
+}
+.link{
+  background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+  background: linear-gradient(to right,#ff8a00,#da1b60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  text-shadow: none;
+  &:hover{
+    background: -webkit-gradient(linear,left top,right top,from(#da1b60),to( #ff8a00));
+    background: linear-gradient(to right,#da1b60,#ff8a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    text-shadow: none;
+  }
+}
+.super-title,.title,.subtitle,.simple-text{
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+.super-title{
+  font-size: 42px;
+}
+.title{
+  font-size: 36px;
+}
+.subtitle{
+  font-size: 26px;
+}
+
+.simple-text{
+  font-size: 18px;
+}
+
+.say-hi {
+  h1 {
     text-align: center;
-    span{
+    span {
       display: block;
       font-size: 16px;
     }
   }
-  iframe{
+  iframe {
     margin: 0 auto;
     display: block;
     margin-top: 60px;
+    border-radius: 20px;
   }
 }
-body{
-  padding-bottom: 190px;
-}
-ul{
-  padding: 0;
-}
-ol{
-  padding-left: 20px;
-}
-.page-not-found{
-  text-align: center;
-}
-.btn-black{
-  color: $white;
-  background: $black;
-  display: inline-block;
-  padding: 5px 10px;
-  font-weight: 700;
-  border: 0;
-  cursor: pointer;
-  transition: all ease 0.3s;
-  &:hover{
-    background: $red;
-    color: $white;
-    text-decoration: none;
+.about{
+  .label{
+    margin-bottom: 5px;
   }
-}
-.input-group{
-  margin-bottom: 30px;
 }
 .shop-list{
-  .createItem{
-    position: relative;
-    width: 100%;
-    input{
-      width: 100%;
-      margin-bottom: 20px;
-      height: 34px;
-      padding: 0 5px;
+  .btn-orange{
+    margin-right: 15px;
+  }
+  .btn-create{
+    margin: 0;
+    cursor: pointer;
+  }
+  .main-info-wrapper{
+    margin-right: 90px;
+    @media all and (max-width: 768px) {
+      margin-right: 0;
     }
-    span{
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      font-size: 12px;
+    input{
+      width: 300px;
+      height: 40px;
+      border-radius: 6px;
+      border: 0;
+      padding: 0 15px;
     }
   }
-
-  h4{
-    font-size: 16px;
-    cursor: pointer;
+  .body{
+    width: 100%;
+    display: flex;
     margin-bottom: 15px;
+    @media all and (max-width: 768px) {
+      display: block;
+    }
+    ol{
+      list-style: inherit;
+    }
+  }
+  .buttons-triger{
+    width: 100%;
+    display: block;
   }
 }
-.photos{
-  ul{
+
+.photos {
+  ul {
     padding: 0;
     list-style: none;
     display: flex;
@@ -75,27 +181,16 @@ ol{
     justify-content: center;
     align-items: center;
     margin: 0 -10px;
-    li{
+    li {
       width: 282px;
       padding: 0 10px;
       margin-bottom: 10px;
-      &:last-child{
+      &:last-child {
         display: none;
       }
-      img{
+      img {
         width: 100%;
       }
     }
   }
-
-}
-.weathers{
-  .main{
-    p{
-      margin: 0;
-    }
-  }
-}
-.justify-content-center{
-  justify-content: center;
 }

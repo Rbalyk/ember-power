@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
-  this.route('say-hi', {path: '/'});
+  this.route('say-hi');
   this.route('skills');
   this.route('calculator');
   this.route('posts', function () {
@@ -20,7 +20,6 @@ Router.map(function () {
   this.route('shop');
   this.route('page-not-found', {path:'/*wildcard'});
   this.route('office');
-  this.route('login');
-  this.route('students');
+  this.route('login',{path: '/'});
 });
 export default Router;

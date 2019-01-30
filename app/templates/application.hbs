@@ -2,17 +2,14 @@
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-expand-lg">
-                {{#link-to "application" tagName="div"}}
+                {{#link-to "say-hi" tagName="div"}}
                     <div class="logo">
-                        <a class="btn-black" href="application">Ember.js by Balyk</a>
+                        <a class="btn-red" href="say-hi">Ember.js by Balyk</a>
                     </div>
                 {{/link-to}}
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
-                        {{#link-to "login" tagName="div"}}
-                            <a class="nav-item nav-link" href="login">login</a>
-                        {{/link-to}}
                         {{#link-to "about" tagName="li"}}
                             <a class="nav-item nav-link" href="about">About</a>
                         {{/link-to}}
@@ -35,6 +32,7 @@
                 </div>
 
             </nav>
+            <hr class="trick">
         </div>
     </div>
 </div>
@@ -45,12 +43,20 @@
         </div>
     </div>
 </div>
+
 <footer class="footer">
-    <div class="wrapper">
-        {{#link-to "application"}}
-            <a class="link" href="application">Ember.js by Balyk</a>
-        {{/link-to}}
-        <p class="footer-copyright">© 2019 / with love by <a href="https://rbalyk-cv.com/" target="_blank" rel="noopener noreferrer">Roman
-            Balyk</a></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr class="trick">
+                <div class="wrapper">
+                    {{#link-to "application"}}
+                        <a class="btn-red" href="application">Ember.js</a>
+                    {{/link-to}}
+                    <p class="footer-copyright">© 2019 / with love by <a href="https://rbalyk-cv.com/" target="_blank" rel="noopener noreferrer">Roman
+                        Balyk</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>

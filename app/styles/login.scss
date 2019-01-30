@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+.login-form-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(16, 15, 23, 0.9), rgba(16, 15, 23, 0.9)), url(https://picsum.photos/2880/1920?image=737);
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 1px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    text-align: center;
+  }
+}
+.super-title{
+  margin-bottom: 20px;
+}
+.login-form {
+  position: relative;
+  box-sizing: border-box;
+  padding: 60px 30px;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Lato', sans-serif;
+  }
+  p{
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  button {
+    padding: 10px 20px;
+  }
+}
