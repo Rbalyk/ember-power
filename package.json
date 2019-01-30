@@ -20,6 +20,7 @@
   "devDependencies": {
     "@ember/jquery": "^0.5.2",
     "@ember/optional-features": "^0.6.3",
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
@@ -44,7 +45,9 @@
     "ember-source": "~3.7.0",
     "ember-welcome-page": "^3.2.0",
     "eslint-plugin-ember": "^5.2.0",
+    "glob": "^4.5.3",
     "loader.js": "^4.7.0",
+    "morgan": "^1.9.1",
     "qunit-dom": "^0.8.0"
   },
   "engines": {
@@ -57,6 +60,7 @@
     "ember-local-storage": "^1.6.0",
     "liquid-fire": "^0.29.5",
     "rsvp": "^4.8.4",
-    "sass": "^1.16.1"
+    "sass": "^1.16.1",
+    "urlencode": "^1.1.0"
   }
 }

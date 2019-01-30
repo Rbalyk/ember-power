@@ -1,6 +1,5 @@
 import Component from '@ember/component';
 import { storageFor } from 'ember-local-storage';
-import { computed } from '@ember/object';
 
 export default Component.extend({
     arrayOfFruit: storageFor('shop-list'),

@@ -2,29 +2,33 @@
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-expand-lg">
-                {{#link-to 'application' tagName='div'}}
+                {{#link-to "application" tagName="div"}}
                     <div class="logo">
                         <a class="btn-black" href="application">Ember.js by Balyk</a>
                     </div>
                 {{/link-to}}
+
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
-                        {{#link-to 'about' tagName='li'}}
+                        {{#link-to "login" tagName="div"}}
+                            <a class="nav-item nav-link" href="login">login</a>
+                        {{/link-to}}
+                        {{#link-to "about" tagName="li"}}
                             <a class="nav-item nav-link" href="about">About</a>
                         {{/link-to}}
-                        {{#link-to 'posts' tagName='li'}}
+                        {{#link-to "posts" tagName="li"}}
                             <a class="nav-item nav-link" href="posts">Blog-Content Api</a>
                         {{/link-to}}
-                        {{#link-to 'currencies' tagName='li'}}
+                        {{#link-to "currencies" tagName="li"}}
                             <a class="nav-item nav-link" href="currencies">Privatbank Api</a>
                         {{/link-to}}
-                        {{#link-to 'photos' tagName='li'}}
+                        {{#link-to "photos" tagName="li"}}
                             <a class="nav-item nav-link" href="photos">Instagram Api</a>
                         {{/link-to}}
-                        {{#link-to 'weather' tagName='li'}}
+                        {{#link-to "weather" tagName="li"}}
                             <a class="nav-item nav-link" href="weather">Weather Api</a>
                         {{/link-to}}
-                        {{#link-to 'shop' tagName='li'}}
+                        {{#link-to "shop" tagName="li"}}
                             <a class="nav-item nav-link" href="shop">Shop-List</a>
                         {{/link-to}}
                     </ul>
@@ -43,10 +47,10 @@
 </div>
 <footer class="footer">
     <div class="wrapper">
-        {{#link-to 'application'}}
+        {{#link-to "application"}}
             <a class="link" href="application">Ember.js by Balyk</a>
         {{/link-to}}
-        <p class="footer-copyright">© 2019 / with love by <a href="https://rbalyk-cv.com/" target="_blank">Roman
+        <p class="footer-copyright">© 2019 / with love by <a href="https://rbalyk-cv.com/" target="_blank" rel="noopener noreferrer">Roman
             Balyk</a></p>
     </div>
 </footer>

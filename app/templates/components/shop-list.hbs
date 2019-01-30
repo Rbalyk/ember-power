@@ -1,5 +1,5 @@
 {{#liquid-if isExpanded}}
-    <div class='body'>
+    <div class="body">
         <h4>{{this.title}}</h4>
         <label class="createItem" for="createItem">
             {{input id="createItem" value=newFruit }}
@@ -8,16 +8,16 @@
 
         <ol>
             {{#each arrayOfFruit as |fruit|}}
-                <li onclick={{action "listItem"}} class="listItem {{if this.isWide "wide"}}">{{fruit}}</li>
+                <li role="button" onclick={{action "listItem"}} class="listItem {{if this.isWide "wide"}}" >{{fruit}}</li>
             {{/each}}
         </ol>
     </div>
-    <button class="btn-black" {{action 'close'}}>Close</button>
-    <button class="btn-black" {{action 'clear'}}>Clear List</button>
-    <button class="btn-black" {{action 'addFruit' newFruit}}>push</button>
+    <button class="btn-black" {{action "close"}}>Close</button>
+    <button class="btn-black" {{action "clear"}}>Clear List</button>
+    <button class="btn-black" {{action "addFruit" newFruit}}>push</button>
 {{else}}
     <div class="row justify-content-center">
-        <h4 class="btn-black" {{action 'expand'}}>{{this.openList}}</h4>
+        <h4 role="button" class="btn-black" {{action "expand"}}>{{this.openList}}</h4>
     </div>
 
 {{/liquid-if}}

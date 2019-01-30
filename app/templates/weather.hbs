@@ -1,6 +1,6 @@
 <div class="weathers">
     <h2>Weather API</h2>
-    <p>Simple way to work with weather API <a href="https://openweathermap.org/api" target="_blank">openweathermap.org/api</a>
+    <p>Simple way to work with weather API <a href="https://openweathermap.org/api" target="_blank" rel="noopener">openweathermap.org/api</a>
     </p>
     <div class="row">
 
@@ -16,7 +16,7 @@
         {{#each weatherParameters as |weatherMain|}}
             <div class="col-md-4">
                 <div class="main">
-                    <p><span><img src='http://openweathermap.org/img/w/{{weatherMain.icon}}.png' alt=""></span><span>{{weatherMain.main}}</span></p>
+                    <p><span><img src="http://openweathermap.org/img/w/{{weatherMain.icon}}.png" alt=""></span><span>{{weatherMain.main}}</span></p>
                     <p>{{weatherMain.description}}</p>
                 </div>
 

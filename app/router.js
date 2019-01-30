@@ -19,5 +19,8 @@ Router.map(function () {
   this.route('weather');
   this.route('shop');
   this.route('page-not-found', {path:'/*wildcard'});
+  this.route('office');
+  this.route('login');
+  this.route('students');
 });
 export default Router;
