@@ -1,0 +1,26 @@
+<div class="articles">
+    <h2 class="title">New York Times Top Stories</h2>
+    <p class="simple-text">Simple work with New York Times API <a href="https://developer.nytimes.com" class="link"
+                                                                  target="_blank"
+                                                                  rel="noopener">developer.nytimes.com</a>
+    </p>
+    <ul class="list-posts">
+        {{#each  articles as |article| }}
+            <li>
+                <a href="{{article.url}}" target="_blank" rel="noopener">
+                    <div class="wrapper-info">
+                        <span class="category">{{article.section}}</span>
+                        <p class="post-author"><span class="label">Article:</span> <b><span
+                                class="post-name">{{article.byline}}</span></b></p>
+                        <span class="post-title">{{article.title}}</span>
+                        <div class="description">
+                            <p class="simple-text">{{article.abstract}}</p>
+                        </div>
+                        <span class="btn-orange">Read More</span>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </ul>
+</div>
+{{outlet}}

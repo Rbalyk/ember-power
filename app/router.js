@@ -21,5 +21,6 @@ Router.map(function () {
   this.route('page-not-found', {path:'/*wildcard'});
   this.route('office');
   this.route('login',{path: '/'});
+  this.route('articles');
 });
 export default Router;

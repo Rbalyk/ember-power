@@ -1,4 +1,4 @@
-.posts{
+.posts,.articles{
   .post-author-information{
     margin-top: 30px;
   }
@@ -31,7 +31,7 @@
         width: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         &:hover{
           text-decoration: none;
         }
@@ -55,6 +55,15 @@
     }
   }
   p{
+    margin: 0;
+  }
+  .category{
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: $red;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
     margin: 0;
   }
 }

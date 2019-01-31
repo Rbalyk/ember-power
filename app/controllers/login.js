@@ -7,6 +7,8 @@ export default Controller.extend({
         authenticate() {
             if(this.get('loginName') === "3.14159" && this.get('password') === "7"){
                 this.transitionToRoute('say-hi')
+            }else{
+                alert("The data is incorrect")
             }
         }
     }
