@@ -1,9 +1,9 @@
-# app-cv
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Ember JS different example for work with API
+![alt text](screnn.jpeg?raw=true "Title")
 
 ## Prerequisites
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
 You will need the following things properly installed on your computer.
 
@@ -15,7 +15,6 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd app-cv`
 * `npm install`
 
 ## Running / Development
